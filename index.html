@@ -3,13 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <title>jQuery Sandbox</title>
-  <script type="text/javascript" src="jquery-script.js"></script>
+  <title>JQuery Intro</title>
+  <script src="vendor/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="scripts/jaIntro.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <h1>jQuery Sandbox</h1>
-
+  <h1 id='intro'>JQuery Intro</h1>
+  <h2 id='what'>What is JQuery?</h2>
+  <h2 id='where' class='subheader'>Where do I get JQuery?</h2>
+  <p>
+    <a href='https://jquery.com/'>https://jquery.com/</a>
+  </p>
+  <h2 id='use'>How do I use JQuery?</h2>
+  <p>
+    Download minified version from above link. Keep in a safe place.
+  </p>
+  <h2 id='application_use' class='subheader'>Application/Use</h2>
+  <h3 id='setup'>Setup</h3>
+  <ul id='setupList'>
+    <li>include file in project (vendors folder)</li>
+    <li>src in minified js file BEFORE your js scripts</li>
+    <li>check that JQ is sourced correctly</li>
+  </ul>
+  <h3 id='select_navigate'>Select/Navigate</h3>
+  <ul id='selectList'>
+    <li># by id</li>
+    <li>. by class
+    </li>
+    <li>element type for all of that element</li>
+  </ul>
+  <h2 class='subheader'>The Lab</h2>
+  <input type='text' id='testInput' placeholder="id: testInput" />
+  <div id='testDiv'>
+    <p id='testP'>P tag with ID 'testP' in div with ID 'testDiv'</p>
+  </div>
 </body>
 
 </html>
